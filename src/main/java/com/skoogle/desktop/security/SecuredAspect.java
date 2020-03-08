@@ -1,6 +1,6 @@
-package com.skoogle.destkop.security;
+package com.skoogle.desktop.security;
 
-import com.skoogle.destkop.exception.AccessDeniedException;
+import com.skoogle.desktop.exception.AccessDeniedException;
 import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

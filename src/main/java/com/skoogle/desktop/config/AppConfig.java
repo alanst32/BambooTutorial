@@ -1,7 +1,11 @@
-package com.skoogle.destkop.config;
+package com.skoogle.desktop.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.MongoDbFactory;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.SimpleMongoClientDbFactory;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -21,6 +25,12 @@ import static springfox.documentation.builders.PathSelectors.regex;
 @Configuration
 @EnableSwagger2
 public class AppConfig extends WebMvcConfigurationSupport {
+
+    @Value("${mongo.uri}")
+    private String mongoURI;
+
+    @Value("${mongo.uri.database}")
+    private String mongoDatabase;
 
     @Bean
     public Docket fixedFileFormatConverter() {
@@ -49,5 +59,18 @@ public class AppConfig extends WebMvcConfigurationSupport {
 
         registry.addResourceHandler("/webjars/**")
             .addResourceLocations("classpath:/META-INF/resources/webjars/");
+    }
+
+    @Bean
+    public MongoDbFactory mongoDbFactory() throws Exception {
+        // MongoClientURI mongoClientURI = new MongoClientURI(mongoURI);
+        // MongoClient mongoClient = new MongoClient(mongoClientURI);
+        return new SimpleMongoClientDbFactory(mongoURI);
+    }
+
+    @Bean
+    public MongoTemplate mongoTemplate() throws Exception {
+        MongoTemplate mongoTemplate = new MongoTemplate(this.mongoDbFactory());
+        return mongoTemplate;
     }
 }

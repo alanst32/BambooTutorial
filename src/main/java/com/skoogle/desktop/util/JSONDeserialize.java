@@ -1,4 +1,4 @@
-package com.skoogle.destkop.util;
+package com.skoogle.desktop.util;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;

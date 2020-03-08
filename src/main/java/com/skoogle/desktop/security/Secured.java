@@ -1,4 +1,4 @@
-package com.skoogle.destkop.security;
+package com.skoogle.desktop.security;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

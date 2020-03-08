@@ -1,19 +1,17 @@
-package com.skoogle.destkop.model;
+package com.skoogle.desktop.dto;
 
 /**
  * @author alanterriaga
  * @project skoogle-desktop
  */
-public class Address {
+public class AddressDto {
 
-
-    public String street;
-    public String streetNumber;
-    public String city;
-    public String zipCode;
-    public String state;
-    public String country;
-
+    private String street;
+    private String streetNumber;
+    private String city;
+    private String zipCode;
+    private String state;
+    private String country;
 
     public String getStreet() {
         return street;

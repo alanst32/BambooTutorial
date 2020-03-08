@@ -1,4 +1,4 @@
-package com.skoogle.destkop.model;
+package com.skoogle.desktop.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
