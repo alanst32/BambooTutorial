@@ -37,6 +37,7 @@ dependencies {
 
     // Mongo
     compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.12.1'
+    compile group: 'org.mongodb', name: 'bson', version: '4.0.0'
 
     // JSON Jackson
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.2'

@@ -1,5 +1,6 @@
 package com.skoogle.desktop.config;
 
+import com.mongodb.client.MongoDatabase;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -32,11 +33,12 @@ public class AppConfig extends WebMvcConfigurationSupport {
     @Value("${mongo.uri.database}")
     private String mongoDatabase;
 
+    // Swagger address: http://localhost:8080/swagger-ui.html
     @Bean
     public Docket fixedFileFormatConverter() {
         return new Docket(DocumentationType.SWAGGER_2)
             .select()
-            .apis(RequestHandlerSelectors.basePackage("com.skoogle.desktop.rest"))
+            .apis(RequestHandlerSelectors.basePackage("com.skoogle.desktop.controller"))
             .paths(regex("/skoogle.*"))
             .build()
             .apiInfo(metaData());
@@ -72,5 +74,10 @@ public class AppConfig extends WebMvcConfigurationSupport {
     public MongoTemplate mongoTemplate() throws Exception {
         MongoTemplate mongoTemplate = new MongoTemplate(this.mongoDbFactory());
         return mongoTemplate;
+    }
+
+    @Bean
+    public MongoDatabase mongoDatabase() throws Exception {
+        return this.mongoTemplate().getDb();
     }
 }

@@ -8,8 +8,10 @@ import org.springframework.data.mongodb.core.mapping.Field;
  * @author alanterriaga
  * @project skoogle-desktop
  */
-@Document("school")
+@Document("School")
 public class School {
+
+    public static final String COLLECTION_NAME = "School";
 
     // import java.util.UUID
     // val uuid = UUID.randomUUID

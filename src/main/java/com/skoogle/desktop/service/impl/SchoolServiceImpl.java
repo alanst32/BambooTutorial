@@ -6,6 +6,7 @@ import com.skoogle.desktop.dto.SchoolRequestDto;
 import com.skoogle.desktop.model.Address;
 import com.skoogle.desktop.model.School;
 import com.skoogle.desktop.service.SchoolService;
+import java.util.List;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,9 +23,13 @@ public class SchoolServiceImpl implements SchoolService {
 
     @Override
     public void insertSchool(SchoolRequestDto dto) throws Exception {
-
         School model = fillModelClasses(dto);
         schoolDAO.insertSchool(model);
+    }
+
+    @Override
+    public List<School> listSchools() throws Exception {
+        return schoolDAO.listSchools();
     }
 
     private School fillModelClasses(SchoolRequestDto dto) {
