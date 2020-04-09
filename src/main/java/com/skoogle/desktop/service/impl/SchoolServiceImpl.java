@@ -23,7 +23,7 @@ public class SchoolServiceImpl implements SchoolService {
 
     @Override
     public void insertSchool(SchoolRequestDto dto) throws Exception {
-        School model = fillModelClasses(dto);
+        School model = fillModelClasses(dto, true);
         schoolDAO.insertSchool(model);
     }
 
@@ -32,9 +32,13 @@ public class SchoolServiceImpl implements SchoolService {
         return schoolDAO.listSchools();
     }
 
-    private School fillModelClasses(SchoolRequestDto dto) {
+
+    private School fillModelClasses(SchoolRequestDto dto, boolean isInsertion) {
         School school = new School();
-        school.setId(UUID.randomUUID().toString());
+
+        if (isInsertion) {
+            school.setId(UUID.randomUUID().toString());
+        }
         school.setName(dto.getName());
         school.setAddress(convertAddressDtoToModel(dto.getAddress()));
         return school;
