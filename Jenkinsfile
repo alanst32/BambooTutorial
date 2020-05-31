@@ -17,7 +17,6 @@ pipeline {
         stage('Test'){
             steps {
                 sh './gradlew test'
-                junit '/build/reports/tests/test/*.xml'
             }
         }
         stage('Building image') {
