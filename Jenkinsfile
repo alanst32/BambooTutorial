@@ -20,9 +20,13 @@ pipeline {
                 junit '/build/reports/tests/test/*.xml'
             }
         }
-        stage('Docker Image') {
-            steps {
-                sh './gradlew docker'
+        stages {
+            stage('Building image') {
+                steps{
+                    script {
+                        docker.build registry + ":$BUILD_NUMBER"
+                    }
+                }
             }
         }
         stage('Push Image') {
