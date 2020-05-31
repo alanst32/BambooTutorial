@@ -4,6 +4,8 @@
     <list default="true" id="13b801ca-1353-4f70-a4c1-3799b2f0b292" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -82,7 +84,7 @@
           <entry key="gitignore" value="2" />
           <entry key="gradle" value="8" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="83" />
+          <entry key="java" value="84" />
           <entry key="properties" value="6" />
         </counts>
       </usages-collector>
@@ -91,7 +93,7 @@
           <entry key="Dockerfile" value="4" />
           <entry key="Git file" value="1" />
           <entry key="Groovy" value="8" />
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="84" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="6" />
         </counts>
@@ -99,10 +101,10 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="127" />
-          <entry key="Jenkinsfile" value="4" />
+          <entry key="Jenkinsfile" value="33" />
           <entry key="dummy" value="20" />
-          <entry key="gradle" value="54" />
-          <entry key="java" value="7585" />
+          <entry key="gradle" value="60" />
+          <entry key="java" value="7587" />
           <entry key="properties" value="94" />
           <entry key="txt" value="341" />
         </counts>
@@ -110,9 +112,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dockerfile" value="127" />
-          <entry key="Groovy" value="54" />
-          <entry key="JAVA" value="7585" />
-          <entry key="PLAIN_TEXT" value="365" />
+          <entry key="Groovy" value="60" />
+          <entry key="JAVA" value="7587" />
+          <entry key="PLAIN_TEXT" value="394" />
           <entry key="Properties" value="94" />
         </counts>
       </usages-collector>
@@ -123,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="645">
+              <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -133,7 +135,16 @@
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/skoogle/desktop/service/impl/SkoogleServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -142,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -415,9 +426,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6345376062000" />
+        <entry key="$PROJECT_DIR$" value="6352465295000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1829182829" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1599603982" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2472011550" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="19860292" />
       </map>
@@ -782,13 +793,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/skoogle/desktop/service/impl/SchoolServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skoogle/desktop/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skoogle/desktop/service/UserService.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/src/Dockerfile" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/src/main/java/com/skoogle/desktop/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
+        <option value="$PROJECT_DIR$/src/test/java/com/skoogle/desktop/service/impl/SkoogleServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -812,6 +824,50 @@
               <item name="skoogle-desktop" type="b2602c69:ProjectViewProjectNode" />
               <item name="skoogle-desktop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="skoogle-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skoogle-desktop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skoogle-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skoogle-desktop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="skoogle-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skoogle-desktop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skoogle-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skoogle-desktop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skoogle-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skoogle-desktop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skoogle-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skoogle-desktop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -820,7 +876,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="/**&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590922138552" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590925482113" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -851,7 +907,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker/Dockerfile">
+  <component name="RunManager" selected="JUnit.All in skoogle-desktop_test">
     <configuration name="Skoogle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.skoogle.desktop.Skoogle" />
       <module name="skoogle-desktop_main" />
@@ -908,6 +964,15 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
+    <configuration name="All in skoogle-desktop_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="skoogle-desktop_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -944,32 +1009,21 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="src/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="src/Dockerfile" />
-          <option name="startBrowserSettings">
-            <browser url="http://127.0.0.1" />
-          </option>
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Application.Skoogle" />
       <item itemvalue="Gradle.skoogle-desktop [build]" />
       <item itemvalue="Gradle.skoogle-desktop [docker]" />
-      <item itemvalue="Docker.src/Dockerfile" />
       <item itemvalue="Docker.docker/Dockerfile" />
+      <item itemvalue="JUnit.All in skoogle-desktop_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in skoogle-desktop_test" />
         <item itemvalue="Docker.docker/Dockerfile" />
         <item itemvalue="Application.Skoogle" />
         <item itemvalue="Gradle.skoogle-desktop [build]" />
         <item itemvalue="Gradle.skoogle-desktop [docker]" />
-        <item itemvalue="Docker.src/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -1019,13 +1073,17 @@
       <option name="project" value="LOCAL" />
       <updated>1590920392528</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Inser School User, beginning deployment tests on Docker and AWS.">
+      <created>1590924376004</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590924376004</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SkoogleServiceImpl_test_insertSchool_should_call_repo - 2020.03.09 at 20h 38m 11s.xml">
-      <configuration name="SkoogleServiceImpl.test_insertSchool_should_call_repo" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SkoogleServiceImpl - 2020.03.09 at 20h 38m 19s.xml">
       <configuration name="SkoogleServiceImpl" configurationId="JUnit" />
     </history-entry>
@@ -1053,6 +1111,9 @@
     <history-entry file="SchoolControllerTest - 2020.03.23 at 22h 06m 36s.xml">
       <configuration name="SchoolControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_skoogle-desktop_test - 2020.05.31 at 21h 38m 01s.xml">
+      <configuration name="All in skoogle-desktop_test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1073,8 +1134,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32959184" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32959184" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32959184" />
@@ -1257,13 +1318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="140" column="35" selection-start-line="140" selection-start-column="35" selection-end-line="140" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/skoogle/desktop/service/impl/SkoogleServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1470,21 +1524,28 @@
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="645">
+          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/skoogle/desktop/service/impl/SkoogleServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
         </state>
       </provider>
     </entry>

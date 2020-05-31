@@ -28,7 +28,7 @@ bootJar {
     baseName = 'skoogle-desktop'
     version = '0.0.1-SNAPSHOT'
 }
-
+gradle
 docker {
     name "skoogle-desktop:0.0.1-SNAPSHOT"
     tags 'skoogle-desktop_gradle'
