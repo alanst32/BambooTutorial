@@ -3,7 +3,8 @@
 # Tutorial - https://stackabuse.com/dockerizing-a-spring-boot-application/
 #FROM java:8-jdk-alpine
 ## Thats is the name of the Jar according to the build.gradle
-## This tells Docker to copy files from the local file-system to a specific folder inside the build image. Here, we copy our .jar file to the build image (Linux image) inside /usr/app.
+## This tells Docker to copy files from the local file-system to a specific folder inside the build image.
+## Here, we copy our .jar file to the build image (Linux image) inside /usr/app.
 #COPY ./build/libs/masterchef-0.0.1-SNAPSHOT.jar /usr/app/
 ## The WORKDIR instruction sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow in the Dockerfile.
 ## Here we switched the workdir to /usr/app so as we don't have to write the long path again and again.
@@ -22,4 +23,4 @@ ARG JAR_FILE=skoogle-desktop-0.0.1-SNAPSHOT.jar
 ADD ${JAR_FILE} skoogle-desktop-0.0.1-SNAPSHOT.jar
 RUN sh -c 'touch skoogle-desktop-0.0.1-SNAPSHOT.jar'
 ENTRYPOINT ["java","-jar","skoogle-desktop-0.0.1-SNAPSHOT.jar"]
-EXPOSE 8080
+EXPOSE 9090

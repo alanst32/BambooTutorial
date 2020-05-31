@@ -1,4 +1,9 @@
 pipeline {
+    environment {
+        registry = "skoogle/skoogle-desktop"
+        registryCredential = 'dockerhub'
+        dockerImage = 'skoogle-desktop-0.0.1-SNAPSHOT.jar'
+    }
     agent any
     options {
         skipStagesAfterUnstable()
@@ -12,12 +17,21 @@ pipeline {
         stage('Test'){
             steps {
                 sh './gradlew test'
-                junit 'reports/**/*.xml'
+                junit '/build/reports/tests/test/*.xml'
             }
         }
-        stage('Deploy') {
+        stage('Docker Image') {
             steps {
-                sh 'make publish'
+                sh './gradlew docker'
+            }
+        }
+        stage('Push Image') {
+            steps{
+                script {
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()
+                    }
+                }
             }
         }
     }
