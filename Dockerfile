@@ -19,7 +19,7 @@
 
 FROM openjdk:latest
 MAINTAINER  Skoogle App <skoogleappr@email.com>
-ARG JAR_FILE=skoogle-desktop-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=build/docker/skoogle-desktop-0.0.1-SNAPSHOT.jar
 ADD ${JAR_FILE} skoogle-desktop-0.0.1-SNAPSHOT.jar
 RUN sh -c 'touch skoogle-desktop-0.0.1-SNAPSHOT.jar'
 ENTRYPOINT ["java","-jar","skoogle-desktop-0.0.1-SNAPSHOT.jar"]
