@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="13b801ca-1353-4f70-a4c1-3799b2f0b292" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -100,7 +101,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="216" />
-          <entry key="Jenkinsfile" value="944" />
+          <entry key="Jenkinsfile" value="952" />
           <entry key="dummy" value="20" />
           <entry key="gradle" value="661" />
           <entry key="java" value="7587" />
@@ -113,7 +114,7 @@
           <entry key="Dockerfile" value="216" />
           <entry key="Groovy" value="661" />
           <entry key="JAVA" value="7587" />
-          <entry key="PLAIN_TEXT" value="1305" />
+          <entry key="PLAIN_TEXT" value="1313" />
           <entry key="Properties" value="166" />
         </counts>
       </usages-collector>
@@ -142,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="39" />
+            <state relative-caret-position="405">
+              <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -866,7 +867,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="/**&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591363602892" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591364240605" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1203,7 +1204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591363149478</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Inser School User, beginning deployment tests on Docker and AWS.">
+      <created>1591363796819</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1591363796819</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1670,8 +1678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="39" />
+        <state relative-caret-position="405">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
         </state>
       </provider>
     </entry>
