@@ -18,16 +18,14 @@ pipeline {
         }
         stage('Building image') {
             steps {
-                script {
-                    docker.build registry + ":$BUILD_NUMBER"
-                }
+                sh './gradlew docker'
             }
         }
         stage('Push image') {
             steps {
                 script {
                     docker.withRegistry( '', registryCredential ) {
-                        dockerImage.push()
+                        sh 'docker push skoogle-desktop:' + ':$BUILD_NUMBER'
                     }
                 }
             }
