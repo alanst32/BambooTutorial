@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry( 'docker.io', registryCredential ) {
-                        sh 'docker push ' + dockerImage
+                        sh 'docker push skoogle/skoogle-desktop:' + dockerImage
                     }
                 }
             }
