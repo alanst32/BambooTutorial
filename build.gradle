@@ -31,11 +31,14 @@ bootJar {
 
 docker {
     name 'skoogle-desktop:0.0.1-SNAPSHOT'
-    tag 'skoogleDockerHub', 'skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
     dependsOn build
     files bootJar
     dockerfile file('Dockerfile')
     buildArgs([BUILD_VERSION: project.version])
+}
+
+task pushDockerImage(type: Exec) {
+    commandLine "docker", "push", "skoogle/skoogle-desktop:0.0.1-SNAPSHOT"
 }
 
 buildScan {

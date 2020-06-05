@@ -2,9 +2,8 @@ pipeline {
     environment {
         registry = "skoogle/skoogle-desktop"
         registryCredential = 'dockerhub'
-        dockerImage = 'skoogle-desktop-0.0.1-SNAPSHOT.jar'
     }
-    agent any
+    agent
     options {
         skipStagesAfterUnstable()
     }
@@ -26,7 +25,7 @@ pipeline {
         }
         stage('Push Image') {
             steps {
-                sh 'docker push skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
+                sh 'docker push skoogle-desktop:0.0.1-SNAPSHOT'
             }
         }
     }
