@@ -21,16 +21,14 @@ pipeline {
         }
         stage('Building image') {
             steps {
-                script {
-                    sh './gradlew docker'
-                }
+                sh './gradlew docker'
             }
         }
         stage('Push Image') {
             steps {
                 step {
                     sh 'docker push skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
-                }s
+                }
             }
         }
     }
