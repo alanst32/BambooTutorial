@@ -20,13 +20,13 @@ pipeline {
         stage('Building image') {
             steps {
                 sh './gradlew docker'
-                sh 'docker tag ' + dockerImage + ' ' + dockerHubConfig
             }
         }
         stage('Push image') {
             steps {
                 script {
                     withDockerRegistry([credentialsId: registryCredential, url: 'https://registry.hub.docker.com']) {
+                        sh 'docker tag ' + dockerImage + ' ' + dockerHubConfig
                         sh 'docker push ' + dockerImage
                     }
                 }
