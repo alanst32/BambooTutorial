@@ -2,6 +2,7 @@ pipeline {
     environment {
         registry = "skoogle/skoogle-desktop"
         registryCredential = 'dockerhub'
+        repoTag = 'skoogle-desktop:0.0.1-SNAPSHOT'
         dockerImage = 'skoogle-desktop:0.0.1-SNAPSHOT'
     }
     agent any
@@ -19,13 +20,14 @@ pipeline {
         stage('Building image') {
             steps {
                 sh './gradlew docker'
+                sh 'docker tag ' + dockerImage + ' ' + repoTag
             }
         }
         stage('Push image') {
             steps {
                 script {
                     docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
-                        sh 'docker push skoogle/' + dockerImage
+                        sh 'docker push ' + dockerImage
                     }
                 }
             }

@@ -30,7 +30,7 @@ bootJar {
 }
 
 docker {
-    name 'skoogle-desktop:0.0.1-SNAPSHOT'
+    name 'skoogle-desktop'
     dependsOn build
     files bootJar
     dockerfile file('Dockerfile')
