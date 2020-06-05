@@ -1,9 +1,9 @@
 pipeline {
+    agent any
     environment {
         registry = "skoogle/skoogle-desktop"
-        registryCredential = 'dockerhub'
+        registryCredential = "dockerhub"
     }
-    agent
     options {
         skipStagesAfterUnstable()
     }
