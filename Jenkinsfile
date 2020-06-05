@@ -1,11 +1,8 @@
 pipeline {
     environment {
-        registry = 'skoogle/skoogle-desktop'
-        registryUrl = 'https://registry.hub.docker.com'
+        registry = "skoogle/skoogle-desktop"
         registryCredential = 'dockerhub'
-    }
-    options {
-        skipStagesAfterUnstable()
+        dockerImage = ''
     }
     agent any
     stages {
@@ -21,12 +18,23 @@ pipeline {
         }
         stage('Building image') {
             steps {
-                sh './gradlew docker'
+                script {
+                    docker.build registry + ":$BUILD_NUMBER"
+                }
             }
         }
-        stage('Push Image') {
+        stage('Push image') {
             steps {
-                sh 'docker push skoogle-desktop:0.0.1-SNAPSHOT'
+                script {
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()
+                    }
+                }
+            }
+        }
+        stage('Remove unused docker image') {
+            steps {
+                sh 'docker rmi $registry:$BUILD_NUMBER'
             }
         }
     }
