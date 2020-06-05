@@ -3,7 +3,7 @@ pipeline {
         registry = "skoogle/skoogle-desktop"
         registryCredential = 'dockerhub'
         dockerHubConfig = 'skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
-        dockerImage = 'skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
+        dockerImage = skoogle-desktop:0.0.1-SNAPSHOT'
     }
     agent any
     stages {
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry([credentialsId: registryCredential, url: 'https://registry.hub.docker.com']) {
-                        sh 'docker push ' + dockerImage
+                        sh 'docker push skoogle/' + dockerImage
                     }
                 }
             }
