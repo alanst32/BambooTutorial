@@ -2,7 +2,7 @@ pipeline {
     environment {
         registry = "skoogle/skoogle-desktop"
         registryCredential = 'dockerhub'
-        dockerImage = ''
+        dockerImage = 'skoogle-desktop:0.0.1-SNAPSHOT'
     }
     agent any
     stages {
@@ -24,15 +24,15 @@ pipeline {
         stage('Push image') {
             steps {
                 script {
-                    docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
-                        sh 'docker push skoogle-desktop:0.0.1-SNAPSHOT'
+                    docker.withRegistry( 'docker.io', registryCredential ) {
+                        sh 'docker push ' + dockerImage
                     }
                 }
             }
         }
         stage('Remove unused docker image') {
             steps {
-                sh 'docker rmi $registry:$BUILD_NUMBER'
+                sh 'docker rmi ' + dockerImage
             }
         }
     }
