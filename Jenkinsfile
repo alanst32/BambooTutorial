@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
-                        sh 'docker push skoogle-desktop:0.0.' + '$BUILD_NUMBER'
+                        sh 'docker push skoogle-desktop:0.0.1-SNAPSHOT'
                     }
                 }
             }
