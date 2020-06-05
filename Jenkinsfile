@@ -1,12 +1,13 @@
 pipeline {
-    agent any
     environment {
-        registry = "skoogle/skoogle-desktop"
-        registryCredential = "dockerhub"
+        registry = 'skoogle/skoogle-desktop'
+        registryUrl = 'https://registry.hub.docker.com'
+        registryCredential = 'dockerhub'
     }
     options {
         skipStagesAfterUnstable()
     }
+    agent any
     stages {
         stage('Gradle Build') {
             steps {
