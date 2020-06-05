@@ -26,9 +26,7 @@ pipeline {
         }
         stage('Push Image') {
             steps {
-                step {
-                    sh 'docker push skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
-                }
+                sh 'docker push skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
             }
         }
     }
