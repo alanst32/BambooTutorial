@@ -3,7 +3,7 @@ pipeline {
         registry = "skoogle/skoogle-desktop"
         registryCredential = 'dockerhub'
         dockerHubConfig = 'skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
-        dockerImage = skoogle-desktop:0.0.1-SNAPSHOT'
+        dockerImage = 'skoogle-desktop:0.0.1-SNAPSHOT'
     }
     agent any
     stages {
