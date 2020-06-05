@@ -20,19 +20,17 @@ pipeline {
             }
         }
         stage('Building image') {
-            steps{
+            steps {
                 script {
                     sh './gradlew docker'
                 }
             }
         }
         stage('Push Image') {
-            steps{
-                script {
-                    docker.withRegistry( '', registryCredential ) {
-                        dockerImage.push()
-                    }
-                }
+            steps {
+                step {
+                    sh 'docker push skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
+                }s
             }
         }
     }
