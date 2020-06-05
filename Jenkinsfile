@@ -27,14 +27,14 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry([credentialsId: registryCredential, url: 'https://registry.hub.docker.com']) {
-                        sh 'docker push ' + dockerImage
+                        sh 'sudo docker push ' + dockerImage
                     }
                 }
             }
         }
         stage('Remove unused docker image') {
             steps {
-                sh 'docker rmi ' + dockerImage
+                sh 'sudo docker rmi ' + dockerImage
             }
         }
     }
