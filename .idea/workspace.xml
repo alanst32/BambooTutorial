@@ -101,7 +101,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="237" />
-          <entry key="Jenkinsfile" value="1706" />
+          <entry key="Jenkinsfile" value="1731" />
           <entry key="dummy" value="20" />
           <entry key="gradle" value="673" />
           <entry key="java" value="7587" />
@@ -114,7 +114,7 @@
           <entry key="Dockerfile" value="237" />
           <entry key="Groovy" value="673" />
           <entry key="JAVA" value="7587" />
-          <entry key="PLAIN_TEXT" value="2067" />
+          <entry key="PLAIN_TEXT" value="2092" />
           <entry key="Properties" value="166" />
         </counts>
       </usages-collector>
@@ -144,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
+              <caret line="28" column="108" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -877,7 +877,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="/**&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591412296418" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591413688365" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1038,20 +1038,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583043077526</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1590920392527</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1590920392528</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1590924376004</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1590924376004</updated>
     </task>
     <task id="LOCAL-00007" summary="Inser School User, beginning deployment tests on Docker and AWS.">
       <created>1590925492853</created>
@@ -1382,7 +1368,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591411973661</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Inser School User, beginning deployment tests on Docker and AWS.">
+      <created>1591412286109</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1591412286109</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Inser School User, beginning deployment tests on Docker and AWS.">
+      <created>1591412330569</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1591412330569</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1435,9 +1435,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.49946752" weight="0.319802" />
+      <window_info active="true" anchor="bottom" id="Docker" order="7" sideWeight="0.49946752" visible="true" weight="0.319802" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946752" weight="0.32871288" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.45247525" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.45247525" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005325" side_tool="true" weight="0.319802" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32959184" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32871288" />
@@ -1850,7 +1850,7 @@
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
+          <caret line="28" column="108" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
         </state>
       </provider>
     </entry>

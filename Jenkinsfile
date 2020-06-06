@@ -27,7 +27,7 @@ pipeline {
                 withCredentials( [usernamePassword(credentialsId: registryCredential, usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')] ) {
                         sh "docker login -u ${USERNAME} -p ${PASSWORD}"
                         sh 'docker tag skoogle-desktop:0.0.1-SNAPSHOT skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
-                        sh 'docker push skoogle-desktop:0.0.1-SNAPSHOT'
+                        sh 'docker push skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
 
                 }
             }
