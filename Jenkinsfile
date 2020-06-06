@@ -25,11 +25,10 @@ pipeline {
         stage('Push image') {
             steps {
                 withCredentials( [usernamePassword(credentialsId: registryCredential, usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')] ) {
-                    docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
                         sh "docker login -u ${USERNAME} -p ${PASSWORD}"
                         sh 'docker tag ' + dockerImage + ' ' + dockerHubImage
                         sh 'docker push ' + dockerHubImage
-                    }
+
                 }
             }
         }
