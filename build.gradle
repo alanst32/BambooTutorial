@@ -13,10 +13,11 @@ plugins {
     id "com.gradle.build-scan" version "3.2.1"
     id "org.springframework.boot" version "2.2.6.RELEASE"
     id 'com.palantir.docker' version '0.25.0'
+    id 'com.palantir.docker-run' version '0.25.0'
 }
 
 group 'com.skoogle.desktop'
-version '1.0-SNAPSHOT'
+version '0.0.1-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -30,11 +31,10 @@ bootJar {
 }
 
 docker {
-    name 'skoogle-desktop'
+    name "${project.name}:${project.version}"
     dependsOn build
-    files bootJar
-    dockerfile file('Dockerfile')
-    buildArgs([BUILD_VERSION: project.version])
+    files "${project.name}:${project.version}.jar"
+    tag "DockerHub", "skoogle/${project.name}:${project.version}"
 }
 
 task pushDockerImage(type: Exec) {

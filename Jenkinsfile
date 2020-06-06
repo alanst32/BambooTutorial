@@ -1,9 +1,12 @@
 pipeline {
     environment {
+        dockerHubAccount = "skoogle"
+        dockerImage = "skoogle-desktop:0.0.1-SNAPSHOT"
+        dockerImageTag = ":0.0.1-SNAPSHOT"
+
         registry = "skoogle/skoogle-desktop"
         registryCredential = 'dockerhub'
         dockerHubImage = 'skoogle-desktop:0.0.1-SNAPSHOT'
-        dockerImage = 'skoogle-desktop:0.0.1-SNAPSHOT'
     }
     agent any
     stages {
@@ -19,15 +22,9 @@ pipeline {
         }
         stage('Building image') {
             steps {
-                sh './gradlew docker'
-            }
-        }
-        stage('Push image') {
-            steps {
-                withCredentials( [usernamePassword(credentialsId: registryCredential, usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')] ) {
-                    sh 'docker tag skoogle-desktop:0.0.1-SNAPSHOT skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
-                    sh 'docker push skoogle/skoogle-desktop:0.0.1-SNAPSHOT'
-                }
+                sh 'docker build -t ' + dockerImage + ' .'
+                sh 'docker tag ' + dockerBuildImage + ' ' + dockerHubAccount + "/" + dockerImage
+                sh 'docker image list'
             }
         }
         stage('Remove unused docker image') {
