@@ -27,7 +27,7 @@ pipeline {
                 script {
                     docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
                         sh 'docker tag ' + dockerImage + ' ' + dockerHubImage
-                        sh 'docker push ' + dockerImage
+                        dockerImage.push()
                     }
                 }
             }
