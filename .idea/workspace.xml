@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="13b801ca-1353-4f70-a4c1-3799b2f0b292" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -100,7 +101,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="237" />
-          <entry key="Jenkinsfile" value="1690" />
+          <entry key="Jenkinsfile" value="1706" />
           <entry key="dummy" value="20" />
           <entry key="gradle" value="673" />
           <entry key="java" value="7587" />
@@ -113,7 +114,7 @@
           <entry key="Dockerfile" value="237" />
           <entry key="Groovy" value="673" />
           <entry key="JAVA" value="7587" />
-          <entry key="PLAIN_TEXT" value="2051" />
+          <entry key="PLAIN_TEXT" value="2067" />
           <entry key="Properties" value="166" />
         </counts>
       </usages-collector>
@@ -142,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="420">
+              <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -876,7 +877,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="/**&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591411900960" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591412039410" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1037,13 +1038,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583043077526</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1586415487637</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1586415487637</updated>
     </task>
     <task id="LOCAL-00005" summary="Inser School User, beginning deployment tests on Docker and AWS.">
       <created>1590920392527</created>
@@ -1381,7 +1375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591411852846</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Inser School User, beginning deployment tests on Docker and AWS.">
+      <created>1591411973661</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1591411973661</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1848,8 +1849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="420">
+          <caret line="28" column="86" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
         </state>
       </provider>
     </entry>
