@@ -23,14 +23,10 @@ pipeline {
         stage('Building image') {
             steps {
                 sh 'docker build -t ' + dockerImage + ' .'
-                sh 'docker tag ' + dockerBuildImage + ' ' + dockerHubAccount + "/" + dockerImage
+                sh 'docker tag ' + dockerImage + ' ' + dockerHubAccount + "/" + dockerImage
                 sh 'docker image list'
             }
         }
-        stage('Remove unused docker image') {
-            steps {
-                sh 'docker rmi ' + dockerImage
-            }
-        }
+
     }
 }
