@@ -17,7 +17,7 @@ plugins {
 }
 
 group 'com.skoogle.desktop'
-version '0.0.1-SNAPSHOT'
+version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -34,11 +34,8 @@ docker {
     name "${project.name}:${project.version}"
     dependsOn build
     files "${project.name}:${project.version}.jar"
-    tag "DockerHub", "skoogle/${project.name}:${project.version}"
-}
-
-task pushDockerImage(type: Exec) {
-    commandLine "docker", "push", "skoogle/skoogle-desktop:0.0.1-SNAPSHOT"
+    dockerfile file('Dockerfile')
+    buildArgs([BUILD_VERSION: project.version])
 }
 
 buildScan {

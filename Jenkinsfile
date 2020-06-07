@@ -1,12 +1,7 @@
 pipeline {
     environment {
-        dockerHubAccount = "skoogle"
-        dockerImage = "skoogle-desktop:0.0.1-SNAPSHOT"
-        dockerImageTag = ":0.0.1-SNAPSHOT"
-
-        registry = "skoogle/skoogle-desktop"
         registryCredential = 'dockerhub'
-        dockerHubImage = 'skoogle-desktop:0.0.1-SNAPSHOT'
+        dockerImage = "skoogle/skoogle-desktop:0.0.1-SNAPSHOT"
     }
     agent any
     stages {
@@ -17,13 +12,13 @@ pipeline {
         }
         stage('Test'){
             steps {
-                sh './gradlew test'
+                sh './gradlew clean test'
             }
         }
         stage('Building image') {
             steps {
                 sh 'docker build -t ' + dockerImage + ' .'
-                sh 'docker tag ' + dockerImage + ' ' + dockerHubAccount + "/" + dockerImage
+                sh 'docker tag ' + dockerImage + ' ' + dockerImage
                 sh 'docker image list'
             }
         }
