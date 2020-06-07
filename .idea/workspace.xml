@@ -101,12 +101,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="274" />
-          <entry key="Jenkinsfile" value="2427" />
+          <entry key="Jenkinsfile" value="2428" />
           <entry key="dummy" value="20" />
           <entry key="gradle" value="854" />
           <entry key="java" value="7587" />
           <entry key="properties" value="166" />
-          <entry key="txt" value="341" />
+          <entry key="txt" value="346" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -114,7 +114,7 @@
           <entry key="Dockerfile" value="274" />
           <entry key="Groovy" value="854" />
           <entry key="JAVA" value="7587" />
-          <entry key="PLAIN_TEXT" value="2788" />
+          <entry key="PLAIN_TEXT" value="2794" />
           <entry key="Properties" value="166" />
         </counts>
       </usages-collector>
@@ -143,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="453">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -927,7 +927,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="/**&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591527551433" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591528137417" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1088,20 +1088,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583043077526</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1591343643814</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1591343643814</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1591344102360</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1591344102360</updated>
     </task>
     <task id="LOCAL-00020" summary="Inser School User, beginning deployment tests on Docker and AWS.">
       <created>1591358803344</created>
@@ -1432,7 +1418,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591501711477</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Inser School User, beginning deployment tests on Docker and AWS.">
+      <created>1591527541256</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1591527541256</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Inser School User, beginning deployment tests on Docker and AWS.">
+      <created>1591527736619</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1591527736619</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1899,8 +1899,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="453">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
