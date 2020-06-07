@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Remove Images') {
             steps {
-                sh 'docker rm -vf $(docker ps -a -q)'
+                sh 'docker system prune'
                 sh 'docker rmi -f $(docker images -a -q)'
             }
         }
