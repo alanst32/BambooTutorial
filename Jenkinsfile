@@ -32,6 +32,5 @@ pipeline {
                 sh 'docker rmi ' + dockerImage
             }
         }
-
     }
 }
