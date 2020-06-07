@@ -12,4 +12,5 @@ public interface SchoolDAO {
     void insertSchool(School model) throws Exception;
     void updateSchool(School model) throws Exception;
     List<School> listSchools();
+
 }
