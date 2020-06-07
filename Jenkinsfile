@@ -7,8 +7,8 @@ pipeline {
     stages {
         stage('Remove Images') {
             steps {
-                sh 'docker system prune'
-                sh 'docker rmi -f $(docker images -a -q)'
+                sh 'docker system prune -a --volumes'
+                sh 'docker image list'
             }
         }
         stage('Gradle Build') {
