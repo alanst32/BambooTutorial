@@ -5,6 +5,11 @@ pipeline {
     }
     agent any
     stages {
+        stage('Remove Images') {
+            steps {
+                sh 'docker rmi -f $(docker images -a -q)'
+            }
+        }
         stage('Gradle Build') {
             steps {
                 sh './gradlew clean build'
@@ -20,6 +25,11 @@ pipeline {
                 sh 'docker build -t ' + dockerImage + ' .'
                 sh 'docker tag ' + dockerImage + ' ' + dockerImage
                 sh 'docker image list'
+            }
+        }
+        stage('Pushing image') {
+            steps {
+                sh 'docker push ' + dockerImage
             }
         }
 
