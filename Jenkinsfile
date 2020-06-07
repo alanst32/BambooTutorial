@@ -5,12 +5,6 @@ pipeline {
     }
     agent any
     stages {
-        stage('Remove Images') {
-            steps {
-                sh 'docker system prune -a --volumes'
-                sh 'docker image list'
-            }
-        }
         stage('Gradle Build') {
             steps {
                 sh './gradlew clean build'
@@ -31,6 +25,11 @@ pipeline {
         stage('Pushing image') {
             steps {
                 sh 'docker push ' + dockerImage
+            }
+        }
+        stage('Remove unused docker image') {
+            steps {
+                sh 'docker rmi ' + dockerImage
             }
         }
 
