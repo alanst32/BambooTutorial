@@ -17,19 +17,19 @@ pipeline {
         }
         stage('Building image') {
             steps {
-                sh 'sudo docker build -t ' + dockerImage + ' .'
-                sh 'sudo docker tag ' + dockerImage + ' ' + dockerImage
-                sh 'sudo docker image list'
+                sh 'docker build -t ' + dockerImage + ' .'
+                sh 'docker tag ' + dockerImage + ' ' + dockerImage
+                sh 'docker image list'
             }
         }
         stage('Pushing image') {
             steps {
-                sh 'sudo docker push ' + dockerImage
+                sh 'docker push ' + dockerImage
             }
         }
         stage('Remove unused docker image') {
             steps {
-                sh 'sudo docker rmi ' + dockerImage
+                sh 'docker rmi ' + dockerImage
             }
         }
     }
