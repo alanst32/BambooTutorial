@@ -19,8 +19,9 @@
 
 FROM openjdk:latest
 MAINTAINER  Skoogle App <skoogleappr@email.com>
+ARG JAR_DIR=build/libs/
 ARG JAR_FILE=skoogle-desktop-0.0.1-SNAPSHOT.jar
-ADD ${JAR_FILE} skoogle-desktop-0.0.1-SNAPSHOT.jar
+ADD ${JAR_DIR}${JAR_FILE} skoogle-desktop-0.0.1-SNAPSHOT.jar
 RUN sh -c 'touch skoogle-desktop-0.0.1-SNAPSHOT.jar'
 ENTRYPOINT ["java","-jar","skoogle-desktop-0.0.1-SNAPSHOT.jar"]
 EXPOSE 9090
