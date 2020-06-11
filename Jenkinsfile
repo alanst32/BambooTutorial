@@ -24,7 +24,9 @@ pipeline {
         }
         stage('Pushing image') {
             steps {
-                sh 'docker push ' + dockerImage
+                docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+                    sh 'docker push ' + dockerImage
+                }
             }
         }
         stage('Remove unused docker image') {
