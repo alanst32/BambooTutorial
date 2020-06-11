@@ -22,12 +22,11 @@ pipeline {
                 sh 'docker image list'
             }
         }
-        stage('Pushing image') {
+        stage('Push image') {
             steps {
-                script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-                        sh 'docker push ' + dockerImage
-                    }
+                withCredentials( [usernamePassword(credentialsId: registryCredential, usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')] ) {
+                    sh 'docker login -u ${USERNAME} -p ${PASSWORD}''
+                    sh 'docker push ' + dockerImage
                 }
             }
         }
