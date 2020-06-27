@@ -8,9 +8,10 @@ buildscript {
     }
 }
 
+
+
 plugins {
     id 'java'
-    id "com.gradle.build-scan" version "3.2.1"
     id "org.springframework.boot" version "2.2.6.RELEASE"
     id 'com.palantir.docker' version '0.25.0'
     id 'com.palantir.docker-run' version '0.25.0'
@@ -19,7 +20,8 @@ plugins {
 group 'com.skoogle.desktop'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_14
+targetCompatibility = JavaVersion.VERSION_14
 
 repositories {
     mavenCentral()
