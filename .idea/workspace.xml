@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13b801ca-1353-4f70-a4c1-3799b2f0b292" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="13b801ca-1353-4f70-a4c1-3799b2f0b292" name="Default Changelist" comment="mongo compose configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/db/docker-comopse.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/db/init-mongo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/docker-comopse.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/init-mongo.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +87,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -103,7 +101,7 @@
       <recent name="$PROJECT_DIR$/build/docker" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Skoogle">
+  <component name="RunManager" selected="Docker.db/docker-comopse.yml: Compose Deployment">
     <configuration name="Skoogle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.skoogle.desktop.Skoogle" />
       <module name="skoogle-desktop_main" />
@@ -193,10 +191,10 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
+    <configuration name="db/docker-comopse.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
         <settings>
-          <option name="sourceFilePath" value="build/docker/Dockerfile" />
+          <option name="sourceFilePath" value="src/main/resources/db/docker-comopse.yml" />
         </settings>
       </deployment>
       <method v="2" />
@@ -204,13 +202,14 @@
     <list>
       <item itemvalue="Application.Skoogle" />
       <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="Docker.docker/Dockerfile" />
       <item itemvalue="Gradle.skoogle-desktop [docker]" />
       <item itemvalue="Gradle.skoogle-desktop" />
       <item itemvalue="JUnit.All in skoogle-desktop_test" />
+      <item itemvalue="Docker.db/docker-comopse.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.db/docker-comopse.yml: Compose Deployment" />
         <item itemvalue="Gradle.skoogle-desktop" />
         <item itemvalue="Gradle.skoogle-desktop [docker]" />
         <item itemvalue="Application.Skoogle" />
@@ -228,34 +227,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583043077526</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1591365711390</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1591365711390</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1591365779269</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1591365779269</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1591365931023</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1591365931023</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Inser School User, beginning deployment tests on Docker and AWS.">
-      <created>1591366078120</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1591366078120</updated>
     </task>
     <task id="LOCAL-00035" summary="Inser School User, beginning deployment tests on Docker and AWS.">
       <created>1591367490825</created>
@@ -572,7 +543,35 @@
       <option name="project" value="LOCAL" />
       <updated>1593220895988</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Java 14 upgrade&#10;Gradle 5.6 Upgrade">
+      <created>1593236835018</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1593236835018</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Mongo local container update">
+      <created>1593946855952</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1593946855952</updated>
+    </task>
+    <task id="LOCAL-00082" summary="mongo compose configuration">
+      <created>1594123813840</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1594123813840</updated>
+    </task>
+    <task id="LOCAL-00083" summary="mongo compose configuration">
+      <created>1594123911399</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1594123911399</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -612,13 +611,61 @@
     <MESSAGE value="SKOOG-8&#10;Insert School Rest Service, Mongo configuration, Security Configuration." />
     <MESSAGE value="SKOOG-9, SKOOG-10, SKOOG-12, SKOOG-13&#10;Rest Service, Set Swagger configuration, Set Unit test configuration. Set Spring Data for query on mongo." />
     <MESSAGE value="Inser School User, beginning deployment tests on Docker and AWS." />
-    <option name="LAST_COMMIT_MESSAGE" value="Inser School User, beginning deployment tests on Docker and AWS." />
+    <MESSAGE value="Java 14 upgrade&#10;Gradle 5.6 Upgrade" />
+    <MESSAGE value="Mongo local container update" />
+    <MESSAGE value="mongo compose configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongo compose configuration" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="164" key="SettingsEditor" timestamp="1593236628767">
+    <state x="-1190" y="257" key="#Docker" timestamp="1594122692894">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1190" y="257" key="#Docker/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1594122692894" />
+    <state x="-1446" y="103" key="CommitChangelistDialog2" timestamp="1594123911254">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1446" y="103" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1594123911254" />
+    <state x="415" y="100" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1593236834634" />
+    <state x="-1103" y="479" key="Github.Dialog.Accounts.Choose" timestamp="1593946728703">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1103" y="479" key="Github.Dialog.Accounts.Choose/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1593946728703" />
+    <state width="1878" height="295" key="GridCell.Tab.0.bottom" timestamp="1593946407905">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="295" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1593946407905" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1593236675450" />
+    <state width="1878" height="295" key="GridCell.Tab.0.center" timestamp="1593946407902">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="295" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1593946407902" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1593236675449" />
+    <state width="1878" height="295" key="GridCell.Tab.0.left" timestamp="1593946407900">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="295" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1593946407900" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1593236675448" />
+    <state width="1878" height="295" key="GridCell.Tab.0.right" timestamp="1593946407903">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="295" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1593946407903" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1593236675450" />
+    <state x="-1311" y="237" key="RollbackChangesDialog" timestamp="1594123778792">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1311" y="237" key="RollbackChangesDialog/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1594123778792" />
+    <state x="341" y="164" key="SettingsEditor" timestamp="1593246622957">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1593236628767" />
+    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1593246622957" />
+    <state x="440" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593236837727">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="252" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1593236837727" />
+    <state x="-1157" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593946692882">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1157" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1593946692882" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
