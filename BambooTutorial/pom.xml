@@ -82,11 +82,7 @@
             <version>5.3.6</version>
         </dependency>
         <!-- Mongo        -->
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>3.12.8</version>
-        </dependency>
+
         <!-- Swagger        -->
         <dependency>
             <groupId>io.springfox</groupId>
