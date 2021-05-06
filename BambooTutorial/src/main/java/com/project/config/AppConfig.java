@@ -39,7 +39,7 @@ public class AppConfig implements WebMvcConfigurer {
 
     @Bean
     public MongoClient mongoClient() {
-        ConnectionString connectionString = new ConnectionString("mongodb://cosmos-alan-mern:DA3yOkc01eimjWVQ4u9LQUNaZ0UXAFjjQkf5GBA6Sl2220OlLMV5VJJSmfEhB0WWqIheSaXdFicS9JFG9C2L6g%3D%3D@cosmos-alan-mern.mongo.cosmos.azure.com:10255/mern-cosmos?ssl=true&appName=@cosmos-alan-mern@");
+        ConnectionString connectionString = new ConnectionString("");
         MongoClientSettings mongoClientSettings = MongoClientSettings
             .builder()
             .applyConnectionString(connectionString)
